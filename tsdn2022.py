@@ -84,7 +84,7 @@ def main():
     
     with st.sidebar:
         logo = Image.open('foto/logo.png')
-        st.image(logo, use_column_width = True ) 
+        st.image(logo, use_container_width = True ) 
         
         choose = option_menu("Menu", ["Beranda", "Deteksi", "Kontak"],
                              icons=['house', 'robot','person lines fill'],
@@ -128,17 +128,17 @@ def main():
         
         with col2:
             logo = Image.open('foto/mentah.jpg')
-            st.image(logo, use_column_width = True )
+            st.image(logo, use_container_width = True )
             st.markdown("""<p style='text-align: center;'>Stroberi mentah</p>""", unsafe_allow_html=True)
             
             st.markdown("#")
             logo = Image.open('foto/masak.jpg')
-            st.image(logo, use_column_width = True )
+            st.image(logo, use_container_width = True )
             st.markdown("""<p style='text-align: center;'>Stroberi masak</p>""", unsafe_allow_html=True)
             
             st.markdown("#")
             logo = Image.open('foto/rusak.jpg')
-            st.image(logo, use_column_width = True )
+            st.image(logo, use_container_width = True )
             st.markdown("""<p style='text-align: center;'>Stroberi rusak</p>""", unsafe_allow_html=True)  
             
             
@@ -210,7 +210,7 @@ def main():
                     data_lengkap_semua_gambar.append(jumlah_masak_per_gambar + jumlah_mentah_per_gambar +jumlah_rusak_per_gambar)
                     
                     with st.expander(str(fp)):
-                        st.image(gambar_terdeteksi, use_column_width = True ) 
+                        st.image(gambar_terdeteksi, use_container_width = True ) 
                     st.markdown('#')             
                    
             jumlah_objek_terdeteksi = jumlah_masak_semua_gambar + jumlah_mentah_semua_gambar + jumlah_rusak_semua_gambar                                       
