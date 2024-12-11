@@ -1,0 +1,10 @@
+streamlit
+opencv-python-headless
+pillow
+typing
+tensorflow
+streamlit_option_menu
+pandas
+numpy
+pathlib
+matplotlib
